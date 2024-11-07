@@ -1,7 +1,7 @@
 import React, {useState, useCallback} from 'react';
 
 
-const searchBar = (props) => {
+const SearchBar = (props) => {
   const {onSearch} = props;
   const [text, setText] = useState('')
 
@@ -16,7 +16,7 @@ const searchBar = (props) => {
 
     return (
     <div className="SearchBar">
-      <input placeholder="Enter A Song Title" onChange={handleTermChange} />
+      <input placeholder="Enter A Song Title" onChange={handleTextChange} />
       <button className="SearchButton" onClick={search}>
         SEARCH
       </button>
@@ -25,4 +25,4 @@ const searchBar = (props) => {
       
 }
 
-export default searchBar;
+export default SearchBar;

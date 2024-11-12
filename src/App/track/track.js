@@ -62,7 +62,7 @@ function Track(props) {
   };
 
   const showInfo = () => {
-    setErrorMessage('No Preview, Sorry');
+    setErrorMessage('No Preview available, Sorry');
   };
 
   useEffect(() => {

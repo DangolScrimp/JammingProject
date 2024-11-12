@@ -29,10 +29,15 @@ function App() {
   }, []);
 
   const updatePlaylistName = useCallback((name) => {
+    
     setPlaylistName(name);
   }, []);
 
   const savePlaylist = useCallback(() => {
+    if (playlistName.length === 0) {
+      alert('please name your playlist before saving.')
+      return;
+    }
     if (playlistTracks.length === 0) {
       alert('Please add a song before saving the playlist.')
       return;

@@ -96,7 +96,7 @@ function Track(props) {
           {isPlaying ? '||' : '▶'}
         </button>
       ) : (
-        <button className='InfoButton' onClick='{showInfo}'>
+        <button className='InfoButton' onClick={showInfo}>
           i
         </button>
       )}

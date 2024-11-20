@@ -84,7 +84,8 @@ function Track(props) {
   };
 
   return (
-    <div>
+    <div className={`Track ${isPlaying ? 'Track-playing' : ''}`}>
+      <img src={track.imageUrl} alt={`${track.name} album cover`} className="Track-image"/>
       <div className='Track-information'>
         <h3>{track.name}</h3>
         <p>

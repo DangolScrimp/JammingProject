@@ -1,18 +1,71 @@
-.App {
+body,
+html,
+#root {
+  height: auto;
+  box-sizing: border-box;
+  background-image: url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 16px;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 50px;
+}
+
+.Container h1 {
+  padding: .77rem 0;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: black;
+  z-index: 2;
+  margin-top: -20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 .highlight {
+  color:beige;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+}
+
+.App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 85%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin-top: -100px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -40px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
 }

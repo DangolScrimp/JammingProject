@@ -1,5 +1,5 @@
 .SearchResults {
-    width: 57%;
+    width: 50%;
     height: 850px;
     overflow-y: scroll;
     padding: 25px;
@@ -20,4 +20,16 @@
     height: 40px;
     width: 40%;
     color: black;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+    .SearchResults {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
 }

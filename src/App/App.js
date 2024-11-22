@@ -52,7 +52,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="Container">
       <h1>
         Ja<span className='highlight'>mmm</span>ing
       </h1>

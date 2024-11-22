@@ -28,7 +28,7 @@ function SearchBar(props) {
     <div className="SearchBar">
       <form onSubmit={search} classname="form">
         <input placeholder="Enter A Song Title" onChange={handleTextChange} type='text'/>
-        <button className="SearchButton" type='submit' onclick={search}>
+        <button className="SearchButton" type='submit'>
           SEARCH
         </button>
       </form>
